@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mixed Media | CSS Deknit</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin: 2rem auto;
+            max-width: 1400px; /* Increase the maximum width */
+        }
+
+        .gallery-item {
+            flex: 1 1 400px; /* Increase the base size of each item */
+            max-width: 450px; /* Allow larger images */
+            text-align: center;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(122, 63, 163, 0.1);
+            padding: 1.5rem; /* Add more padding for descriptions */
+        }
+
+        .gallery-item img {
+            width: 100%; /* Ensures the image fits within the container */
+            height: 300px; /* Increase the height */
+            object-fit: cover; /* Ensures the image scales and crops proportionally */
+            border-radius: 8px;
+            margin-bottom: 1rem; /* Add more space below the image */
+            box-shadow: 0 2px 8px rgba(122, 63, 163, 0.15);
+        }
+
+        .gallery-item p {
+            font-size: 1.2rem; /* Increase font size for descriptions */
+            color: #3d2c4a;
+            margin: 0;
+            line-height: 1.6; /* Add more line spacing for readability */
+            text-align: justify; /* Justify the text for a cleaner look */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="women.html" class="dropbtn">Women Collection</a>
+                <ul class="dropdown-content">
+                    <li><a href="mixed-media.html">Mixed Media</a></li>
+                    <li><a href="textile.html">Textile</a></li>
+                </ul>
+            </li>
+            <li><a href="tangle.html">Tangle Collection</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1 style="text-align:center;">Mixed Media Collection</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="Pictures/MM1.jpg" alt="Mixed Media 1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Pictures/MM2.jpg" alt="Mixed Media 2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Pictures/MM3.jpg" alt="Mixed Media 3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Pictures/MM4.jpg" alt="Mixed Media 4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Pictures/MM5.jpg" alt="Mixed Media 5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Pictures/MM6.jpg" alt="Mixed Media 6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Pictures/MM7.jpg" alt="Mixed Media 7">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Pictures/MM8.jpg" alt="Mixed Media 8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Pictures/MM9.jpg" alt="Mixed Media 9">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+</body>
+</html>

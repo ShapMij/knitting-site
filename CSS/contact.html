@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CSS Deknit</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #f7f3fa;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .contact-form {
+            max-width: 800px; /* Increased width */
+            margin: 4rem auto;
+            padding: 3rem; /* Increased padding */
+            background: #fff;
+            border-radius: 16px; /* Larger border radius */
+            box-shadow: 0 8px 24px rgba(122, 63, 163, 0.2); /* Stronger shadow */
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            color: #7a3fa3;
+            font-size: 2.5rem; /* Larger font size */
+            margin-bottom: 2rem;
+        }
+
+        .contact-form label {
+            display: block;
+            font-size: 1.2rem; /* Larger font size */
+            margin-bottom: 0.75rem;
+            color: #3d2c4a;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1rem; /* Increased padding */
+            margin-bottom: 2rem; /* More spacing between fields */
+            border: 1px solid #ddd;
+            border-radius: 12px; /* Larger border radius */
+            font-size: 1.1rem; /* Larger font size */
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #7a3fa3;
+            outline: none;
+            box-shadow: 0 0 8px rgba(122, 63, 163, 0.2);
+        }
+
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 1rem; /* Increased padding */
+            background: #7a3fa3;
+            color: #fff;
+            font-size: 1.5rem; /* Larger font size */
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .contact-form button:hover {
+            background: #5e2a8a;
+            transform: scale(1.02); /* Slight zoom effect */
+        }
+
+        .contact-form button:active {
+            transform: scale(0.98); /* Slight press effect */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="women.html" class="dropbtn">Women Collection</a>
+                <ul class="dropdown-content">
+                    <li><a href="mixed-media.html">Mixed Media</a></li>
+                    <li><a href="textile.html">Textile</a></li>
+                </ul>
+            </li>
+            <li><a href="tangle.html">Tangle Collection</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
